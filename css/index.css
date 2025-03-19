@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: rgb(147, 139, 139);
+    /* 可以让行盒里的元素居中，因为text-align: center;是可以继承的，而文字就是行盒 */
+    text-align: center;
+}
+
+audio {
+    width: 450px;
+    margin: 30px 0;
+}
+
+.container {
+    height: 420px;
+    overflow: hidden;
+}
+
+.container ul {
+    /* transition 只针对数值类有效 */
+    transition: 0.2s;
+    list-style: none;
+}
+
+.container li{
+    /* 设置高度和行高是为了让文字居中 */
+    height: 30px;
+    line-height: 30px;
+    transition: 0.6s;
+}
+
+.container li.active{
+    color: white;
+    transform: scale(1.3);
+}
